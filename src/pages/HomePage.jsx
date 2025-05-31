@@ -8,10 +8,12 @@ function HomePage() {
     <section className="py-12 bg-gray-50 dark:bg-gray-800">
       <Hero /> {/* Aquí renderizamos tu sección de héroe */}
       <div className="container mx-auto px-4 text-center mt-8">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">¡Bienvenido a mi Portafolio!</h2>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
-          Mi nombre es Gonzalo Romero, gracias por visitarme
-        </p>
+        <h2 className="text-3xl font-bold mb-4">
+  Mi Viaje en el Desarrollo Web
+</h2>
+<p className="text-lg">
+  Este portafolio es una ventana a mi dedicación y a la evolución de mis habilidades como Desarrollador Full Stack. Conoce más sobre mi trayectoria y visión.
+</p>
       </div>
     </section>
   );
