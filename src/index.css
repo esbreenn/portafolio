@@ -1,0 +1,57 @@
+/* src/index.css */
+
+/* Importaciones de Tailwind */
+@import "tailwindcss";
+
+/* Aquí puedes agregar cualquier estilo global adicional que necesites */
+body {
+  font-family: 'Inter', sans-serif; /* Ejemplo: puedes importar fuentes de Google Fonts en index.html */
+  /* Aplica estilos base con Tailwind para modo claro y oscuro */
+  @apply bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-gray-100; /* He cambiado dark:bg-gray-900 a dark:bg-gray-950 para un fondo más oscuro, como en la opción 2 */
+}
+
+/* Clases para animaciones, si las usas (y definidas en tailwind.config.js) */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slideInUp {
+  animation: slideInUp 0.8s ease-out 0.3s forwards; /* 0.3s de retraso */
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.animate-scaleIn {
+  animation: scaleIn 0.7s ease-out 0.6s forwards; /* 0.6s de retraso */
+}
+
+/* --- Nuevos estilos para el cursor de TypeAnimation --- */
+.TypeAnimation::after {
+    content: '|'; /* El carácter del cursor */
+    animation: blink-caret 0.75s step-end infinite;
+    font-weight: 300; /* Para que el cursor no sea tan grueso como el texto */
+    vertical-align: middle; /* Para alinearlo verticalmente con el texto */
+    margin-left: 4px; /* Un pequeño espacio entre el texto y el cursor */
+    /* Color del cursor, puedes ajustarlo para que sea visible en ambos modos.
+       Podría ser un color de acento o un blanco/gris que contraste. */
+    color: currentColor; /* Usa el color actual del texto o define uno fijo como #4ade80 (green-400) */
+}
+
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}

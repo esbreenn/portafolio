@@ -1,0 +1,1 @@
+Recursos estáticos que sí necesitan ser procesados (ej. imágenes para importar en JS/CSS, íconos, fuentes)
