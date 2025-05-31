@@ -42,7 +42,7 @@ function Header({ toggleDarkMode, isDarkMode }) {
           {/* Visible en pantallas medianas y grandes (md:block), oculto en móviles (hidden) */}
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full text-white hover:bg-gray-700 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white hidden md:block"
+            className="p-2 rounded-full text-white hover:bg-gray-700 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white  md:block"
             aria-label="Alternar modo oscuro/claro"
           >
             {isDarkMode ? (
